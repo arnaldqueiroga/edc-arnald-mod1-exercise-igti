@@ -1,7 +1,7 @@
-name: Deploy
+name: Test on TP
 
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs:
@@ -35,7 +35,6 @@ jobs:
         $COMMAND_IAC init  
         $COMMAND_IAC validade
         $COMMAND_IAC plan
-        $COMMAND_IAC apply -auto-approve
 
 
 
