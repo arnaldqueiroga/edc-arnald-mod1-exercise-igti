@@ -1,12 +1,12 @@
-name: Test on TP
+name: Test on PR
 
 on:
   pull_request:
     branches: [main]
 
 jobs:
-  deploy:
-    name: Deploy to Datalake
+  test:
+    name: Teste infra on PR
     runs-on: ubuntu-latest
     
     steps:
